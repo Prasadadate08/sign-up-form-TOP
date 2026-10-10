@@ -1,3 +1,53 @@
+*{
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.woff2') format('woff2'),
+        url('fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 body{
     background-color: lightcyan;
+}
+
+.container{
+    display: flex;
+}
+
+.left-background{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    height: 150px;
+}
+
+.odin-text{
+    position: absolute;
+    color: white;
+    font-family: Norse;
+    font-size: 100px;
+    display: flex;
+    top: 30%;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+    background-color: rgb(22,34,45, 0.8);
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    a{
+        color: white;
+    }
 }
