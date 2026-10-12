@@ -21,7 +21,44 @@
             </div>
 
             <fieldset class="form-details">
-                <p>Lets do this!</p>
+                <h2>Lets do this!</h2>
+                <div>
+                    <div class="form-row">
+                        <label for="fname">FIRST NAME</label>
+                        <input type="text" name="fname" id="fname">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="lname">LAST NAME</label>
+                        <input type="text" name="lname" id="lname">
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="form-row">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" placeholder="sample@gmail.com">
+                    </div>
+                
+                    <div class="form-row">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone" maxlength="10">
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="form-row">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" minlength="6" maxlength="12">
+                        <span class="pass-msg">password length (6-12 characters)</span>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="password">CONFIRM PASSWORD</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                </div>
+                
             </fieldset>
 
         </form>

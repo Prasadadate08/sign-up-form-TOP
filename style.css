@@ -74,7 +74,7 @@ form{
     padding-bottom: 40px;
     /* min-width: 100vw; */
 }
-.top-heading > p{
+.top-heading p{
     margin-bottom: 20px;
     width: 680px;
 }
@@ -82,4 +82,67 @@ form{
 .form-details{
     box-sizing: border-box;
     background-color: white;
+}
+
+
+.form-details{
+    padding-left: 50px;
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
+.form-details h2 ~ div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding-bottom: 15px;
+}
+
+.form-row{
+    display: flex;
+    flex-direction: column;
+    
+    label{
+        font-size: 14px;
+    }
+    
+    input{
+            border: 1px solid #E5E7EB;
+            padding: 6px;
+            width: 300px;
+            font-size: 18px;
+            border-radius: 4px;
+    }
+}
+
+.pass-msg{
+    display: none;
+}
+
+.form-row input:focus {
+    border: 1px solid blue;
+    outline: 0px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.form-row input:invalid{
+    border: 2px solid red;
+    outline: 0px;
+    display: block;
+}
+
+input:user-invalid ~ .pass-msg,
+input:invalid:focus ~ .pass-msg {
+  display: block;
+}
+
+fieldset{
+    border: 0px solid;
+    outline: 0px;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+}
+
+h2{
+    padding-bottom: 20px;
+    font-weight: 600;
 }
