@@ -42,7 +42,7 @@
                 
                     <div class="form-row">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone" id="phone" maxlength="10">
+                        <input type="tel" name="phone" id="phone" minlength="10" maxlength="10">
                     </div>
                 </div>
                 
@@ -54,13 +54,19 @@
                     </div>
 
                     <div class="form-row">
-                        <label for="password">CONFIRM PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <label for="cpassword">CONFIRM PASSWORD</label>
+                        <input type="password" name="cpassword" id="cpassword" minlength="6" maxlength="12">
+                        <span class="pass-msg">password length (6-12 characters)</span>
                     </div>
                 </div>
                 
             </fieldset>
 
+            <div class="bottom-action">
+                <button class="create-acc" type="submit">Create Account</button>
+
+                <p>Already have an account? Log in</p>
+            </div>
         </form>
     </div>
 </body>
